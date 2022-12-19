@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #33139c;
+            margin: auto;
+        }
+        /* css so that each paper rock and scissors is in the corner of the triangle */
+        .container{
+            position:absolute;
+            width: 50%;
+            height: 50%;
+            top: 25%;
+            left: 25%;
+            background-color: #fff;
+        }
+        
+        #tri{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            
+        }
+        #paper{
+            position: absolute;
+            width: 20%;
+            height: 30%;
+            top: -20%;
+            left: -10%;
+            border: 40px solid red;
+            border-radius: 55%;
+            background-color: #fff;
+            padding: 10px;
+        }
+        #scissors{
+            position: absolute;
+            width: 20%;
+            height: 30%;
+            top: -20%;
+            right: -10%;
+            border: 40px solid red;
+            border-radius: 50%;
+            background-color: #fff;
+            padding: 10px;
+        }
+        #rock{
+            position: absolute;
+            width: 20%;
+            height: 30%;
+            bottom: -20%;
+            left: 30%;
+            border: 40px solid red;
+            border-radius: 50%;
+            background-color: #fff;
+            padding: 10px;
+        } 
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./images/bg-triangle.svg" alt="tri" id="tri">
+        <img src="icon-paper.svg" alt="paper" id="paper">
+        <img src="icon-scissors.svg" alt="scissors" id="scissors">
+        <img src="icon-rock.svg" alt="rock" id="rock">
+        
+    </div>
+</body>
+</html>
