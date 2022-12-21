@@ -165,6 +165,31 @@ body{
     display: flex;
     justify-content: center;
 }
+.modal{
+    display: flex;
+            width: 50%;
+            margin:auto;
+            
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            margin-top: 10%;
+}
+.rules{
+    width: 300px;
+    height: 300px;
+    
+    /* background-color: aliceblue; */
+}
+.ab2{
+    position: fixed;
+    top: 23%;
+    right: 38%;
+    width: 20px;
+    height:20px;
+    cursor: pointer;
+    background-color: aliceblue;
+}
 @media only screen and (max-width:600px) {
     .images{
         width :50%;

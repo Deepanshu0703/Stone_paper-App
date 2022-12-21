@@ -7,117 +7,36 @@
     <title>Document</title>
     <style>
         body{
-            background-color: #33139c;
+            background-color: #8262ed;
             margin: auto;
         }
-        /* css so that each paper rock and scissors is in the corner of the triangle */
-        .container{
-            width: 50%;
-            height: 400px;
-            background-image: url(./images/bg-triangle.svg);
-            background-repeat: no-repeat;
-            /* display: block; */
-            margin:5% auto;
-            border: 3px solid white;
-            background-position: center ;
-            box-sizing: border-box;
-            
-        }
-        .uppar{
-            box-sizing: border-box;
-            display :flex;
-            flex-direction: row;
-            
-            justify-content: space-around;
-            align-items: center;
-            align-content: center;
-
-        }
-        .niche{
-            border : 1px solid salmon;
-            margin-top: 70px;
-        }
-       .paper{
-        align-self: center;
-        border :1px solid white;
-            width: 50%;
-            /* margin :auto; */
-       }
-       .scissors{
-        align-self: center;
-        border :1px solid white;
-            width: 50%;
-            margin :auto;
-       }
-        #paper{
-           /* margin-left: 25%; */
-            border: 2.5rem solid red;
-            border-radius: 55%;
-            background-color: #fff;
-            padding: 1rem;
-            
-        }
-        #scissors{
-            /* margin-left: 25%; */
-            
-            border: 2.5rem solid red;
-            border-radius: 50%;
-            background-color: #fff;
-            padding: 1rem;
-    
-        }
-        #rock{
-            
-            border: 2.5rem solid red;
-            border-radius: 50%;
-            background-color: #fff;
-            padding: 1rem;
-        } 
         .contain{
-            width: 500px;
-            height: 500px;
             display: flex;
-            margin: auto;
-            border: 2px solid red;
+            width: 50%;
+            margin:auto;
+            background-color: #33139c;
             justify-content: center;
             align-items: center;
+            border-radius: 10px;
+            margin-top: 10%;
         }
-
-        .ab{
-            /* align-self: center; */
-           width :100px ;
-           height:100px;
-           background-color: #fff;
-        }
-        @media only screen and (max-width:600px){
-            .container{
-                width: 90%;
-            }
+        .ab2{
+            position: fixed;
+            top: 22%;
+            right: 25%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            background-color: aliceblue;
         }
 
     </style>
 </head>
 <body>
-    <div class="container">
-       
-        <div class="uppar">
-            <div class="paper">
-                <center><img src="icon-paper.svg" alt="paper" id="paper"/></center>
-            </div>
-            <div class="scissors">
-                <center><img src="icon-scissors.svg" alt="scissors" id="scissors"/></center>
-            </div>
-        </div>
-        <div class=niche>
-            <div class="rock">
-                <center><img src="icon-rock.svg" alt="rock" id="rock"> </center>
-            </div>
-        </div>
-        
-    </div>
+    
     <div class="contain">
-        <div class="ab">box</div>
-        <div class="ab">box</div>
+        <img class="ab1" src="./images/image-rules-bonus.svg"/>
+        <img class="ab2" src="./images/icon-close.svg"/>
         </div>
 </body>
 </html>

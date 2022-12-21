@@ -7,8 +7,8 @@ import Modal from "./Modal";
 
 function App() {
     const clas = ["paper", "rock", "scissors"];
-    const imag=["icon-paper.svg","icon-rock.svg","icon-scissors.svg"];
-    const color=["rgba(245, 29, 29, 0.87)","rgba(247, 247, 30, 0.991)","rgb(60, 178, 241)"];
+    const imag=["icon-paper.svg","icon-rock.svg","icon-scissors.svg","icon-spock.svg"];
+    const color=["rgba(245, 29, 29, 0.87)","rgba(247, 247, 30, 0.991)","rgb(60, 178, 241)","rgb(0, 0,0)"];
     const [user, setUser] = React.useState(0);
     const [score, setScore] = React.useState(0);
     const [num2, setNum2] = React.useState(0);
@@ -29,6 +29,7 @@ function App() {
 
 
         setUser(1);
+        setNum(3);
         setTimeout(function start2(){
             const number=Math.floor(Math.random() * 3)
             setNum(number);
@@ -60,7 +61,17 @@ function App() {
         setUser(0);
     }
     function shower(){
-        setShow(!show);
+        if(show===false){
+            setShow(true);
+            const body=document.querySelector("body");
+            body.style.backgroundColor="hsl(214, 47%, 23%)";
+        }
+        else{
+            setShow(false);
+            const body=document.querySelector("body");
+            body.style.backgroundColor="#171333";
+        }
+        
     }
 
 
