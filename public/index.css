@@ -123,10 +123,8 @@ body{
 }
 
 .btn1{
-    position:absolute;
-    bottom: 20%;
-    left: 43%;
-    width: 15%;
+    
+    width: 90%;
     background-color: #fff;
     border-radius: 5%;
     border: 2px solid #000;
@@ -134,16 +132,17 @@ body{
     font-size: 1.3rem;
     font-weight: bold;
     padding: 1%;
-    margin: auto;
+    margin:80px 30px;
 
 }
 .imge{
+    text-align: center;
     width: 100px;
     border:2em solid;
     border-radius: 50%;
     padding: 2%;
     background-color: antiquewhite;
-    margin: 2% 10% 0% 20%;
+    margin-left:20px;
 }
 .message{
     font-size: 2rem;
@@ -159,4 +158,16 @@ body{
     padding: 2%;
     border-radius: 10px;
     width: 30%;
+}
+.images{
+    width: 30%;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width:600px) {
+    .images{
+        width :50%;
+    }
+    
 }

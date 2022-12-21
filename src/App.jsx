@@ -28,8 +28,8 @@ function App() {
         }
 
 
+        setUser(1);
         setTimeout(function start2(){
-            setUser(1);
             const number=Math.floor(Math.random() * 3)
             setNum(number);
             if(imag[number]===props.target.alt){
@@ -84,12 +84,12 @@ function App() {
              <Score scor={score}/>
              <Message my={clas[num2]} com={clas[num]}/>
             <div >
-                <div className="imag">
-                    <Play color={color[num2]} name={imag[num2]}   class="imge" />
-                    <Play color={color[num]} name={imag[num]} class="imge" />
+                <div className="images">
+                    <center><Play color={color[num2]} name={imag[num2]}   class="imge" /></center><PlayAgain onClic={startAgain}/>
+                    <center><Play color={color[num]} name={imag[num]} class="imge" /></center>
                 </div>
             </div>
-            <PlayAgain onClic={startAgain}/><button className="btn" onClick={shower}>Rules</button></div>:<Modal onc={shower}/>}
+            <button className="btn" onClick={shower}>Rules</button></div>:<Modal onc={shower}/>}
             </div>}
             </div>
     );

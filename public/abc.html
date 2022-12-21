@@ -12,67 +12,112 @@
         }
         /* css so that each paper rock and scissors is in the corner of the triangle */
         .container{
-            position:absolute;
             width: 50%;
-            height: 50%;
-            top: 25%;
-            left: 25%;
-            background-color: #fff;
-        }
-        
-        #tri{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
+            height: 400px;
+            background-image: url(./images/bg-triangle.svg);
+            background-repeat: no-repeat;
+            /* display: block; */
+            margin:5% auto;
+            border: 3px solid white;
+            background-position: center ;
+            box-sizing: border-box;
             
         }
+        .uppar{
+            box-sizing: border-box;
+            display :flex;
+            flex-direction: row;
+            
+            justify-content: space-around;
+            align-items: center;
+            align-content: center;
+
+        }
+        .niche{
+            border : 1px solid salmon;
+            margin-top: 70px;
+        }
+       .paper{
+        align-self: center;
+        border :1px solid white;
+            width: 50%;
+            /* margin :auto; */
+       }
+       .scissors{
+        align-self: center;
+        border :1px solid white;
+            width: 50%;
+            margin :auto;
+       }
         #paper{
-            position: absolute;
-            width: 20%;
-            height: 30%;
-            top: -20%;
-            left: -10%;
-            border: 40px solid red;
+           /* margin-left: 25%; */
+            border: 2.5rem solid red;
             border-radius: 55%;
             background-color: #fff;
-            padding: 10px;
+            padding: 1rem;
+            
         }
         #scissors{
-            position: absolute;
-            width: 20%;
-            height: 30%;
-            top: -20%;
-            right: -10%;
-            border: 40px solid red;
+            /* margin-left: 25%; */
+            
+            border: 2.5rem solid red;
             border-radius: 50%;
             background-color: #fff;
-            padding: 10px;
+            padding: 1rem;
+    
         }
         #rock{
-            position: absolute;
-            width: 20%;
-            height: 30%;
-            bottom: -20%;
-            left: 30%;
-            border: 40px solid red;
+            
+            border: 2.5rem solid red;
             border-radius: 50%;
             background-color: #fff;
-            padding: 10px;
+            padding: 1rem;
         } 
-        
+        .contain{
+            width: 500px;
+            height: 500px;
+            display: flex;
+            margin: auto;
+            border: 2px solid red;
+            justify-content: center;
+            align-items: center;
+        }
 
+        .ab{
+            /* align-self: center; */
+           width :100px ;
+           height:100px;
+           background-color: #fff;
+        }
+        @media only screen and (max-width:600px){
+            .container{
+                width: 90%;
+            }
+        }
 
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="./images/bg-triangle.svg" alt="tri" id="tri">
-        <img src="icon-paper.svg" alt="paper" id="paper">
-        <img src="icon-scissors.svg" alt="scissors" id="scissors">
-        <img src="icon-rock.svg" alt="rock" id="rock">
+       
+        <div class="uppar">
+            <div class="paper">
+                <center><img src="icon-paper.svg" alt="paper" id="paper"/></center>
+            </div>
+            <div class="scissors">
+                <center><img src="icon-scissors.svg" alt="scissors" id="scissors"/></center>
+            </div>
+        </div>
+        <div class=niche>
+            <div class="rock">
+                <center><img src="icon-rock.svg" alt="rock" id="rock"> </center>
+            </div>
+        </div>
         
     </div>
+    <div class="contain">
+        <div class="ab">box</div>
+        <div class="ab">box</div>
+        </div>
 </body>
 </html>
